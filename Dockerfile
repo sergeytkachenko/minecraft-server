@@ -1,10 +1,11 @@
-FROM openjdk:17-slim
+FROM eclipse-temurin:21-jre
 
 WORKDIR /data
 
 ENV MINECRAFT_VERSION=1.21.5-rc2
 ENV MINECRAFT_JAR=server.jar
 ENV MINECRAFT_DOWNLOAD_URL=https://piston-data.mojang.com/v1/objects/82b8d395a4984987224b97c7df08ced03f78bdff/server.jar
+#ENV MINECRAFT_DOWNLOAD_URL=https://piston-data.mojang.com/v1/objects/6e5564e9b1a0a45d3cb028d5af591cd30e53b404/server.jar
 ENV MINECRAFT_MEM_MIN=1G
 ENV MINECRAFT_MEM_MAX=2G
 
